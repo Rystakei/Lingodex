@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  subject: MyString
+  cards: MyString
+  times_reviewed: 1
+  results: MyString
+
+two:
+  name: MyString
+  subject: MyString
+  cards: MyString
+  times_reviewed: 1
+  results: MyString
