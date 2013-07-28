@@ -1,2 +1,6 @@
-def index
+class WelcomeController < ApplicationController
+
+  def index
+  end
+
 end

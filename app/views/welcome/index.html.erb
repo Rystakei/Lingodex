@@ -1,0 +1,8 @@
+<h1>LingoDex</h1>
+<h2>Language Flashcards Management System</h2>
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+
+  <% end %>
+
+  <%= link_to "View your decks?", decks_path %>
