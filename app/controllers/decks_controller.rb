@@ -69,6 +69,16 @@ class DecksController < ApplicationController
     end
   end
 
+ def recallquiz
+    @deck = Deck.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @deck }
+    end
+  end
+
+
   # DELETE /decks/1
   # DELETE /decks/1.json
   def destroy

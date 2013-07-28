@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<div class = "card">
+<p>
+  <b>Term:</b>
+  <%= @card.term %>
+</p>
+</div>
+
+<div class = "card">
+<p>
+  <b>Definition:</b>
+  <%= @card.definition %>
+</p>
+</div>
+
+
+
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

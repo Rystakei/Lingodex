@@ -3,7 +3,7 @@ class CreateDecks < ActiveRecord::Migration
     create_table :decks do |t|
       t.string :name
       t.string :subject
-      t.string :cards
+      t.references :cards
       t.integer :times_reviewed
       t.string :results
 

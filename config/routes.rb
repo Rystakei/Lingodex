@@ -1,4 +1,6 @@
 Lingodex::Application.routes.draw do
+  resources :cards
+
   resources :decks
 
   # The priority is based upon order of creation:
@@ -50,7 +52,12 @@ Lingodex::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'decks#index'
+
+match 'decks/:id/recallquiz' => 'decks#recallquiz', :as => :recallquiz
+
+
+  # match 'decks/:id/recallquiz' => 'decks/:id/recallquiz/'
 
   # See how all your routes lay out with "rake routes"
 

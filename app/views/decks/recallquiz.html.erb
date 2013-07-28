@@ -1,0 +1,12 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<h1> Recall Quiz </h1>
+
+<h2> Shuffling Cards..</h2>
+
+  <% @deck.cards.each do |card| %>
+
+<div class = "card"> <h4>Definition:</h4> <%= card.definition %>  
+<h4> Term: </h4> <%=card.term%> </div>
+ <% end %>
+

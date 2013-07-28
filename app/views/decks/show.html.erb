@@ -1,18 +1,16 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @deck.name %>
-</p>
+
+
+<h1>
+   <%= @deck.name %> Deck
+</h1>
 
 <p>
   <b>Subject:</b>
   <%= @deck.subject %>
-</p>
-
-<p>
-  <b>Cards:</b>
-  <%= @deck.cards %>
 </p>
 
 <p>
@@ -26,5 +24,19 @@
 </p>
 
 
+<h2> Options <h1>
+<h3> <%= link_to  "Take Recall Quiz", recallquiz_path %></h3>
+<h3> Take Multiple-Choice Quiz</h3>
+
 <%= link_to 'Edit', edit_deck_path(@deck) %> |
 <%= link_to 'Back', decks_path %>
+
+ <p>
+ 
+  <b>Cards:</b>
+  <% @deck.cards.each do |card| %>
+
+<div class = "card"> <h4>Definition:</h4> <%= card.definition %>  
+<h4> Term: </h4> <%=card.term%> </div>
+ <% end %> 
+

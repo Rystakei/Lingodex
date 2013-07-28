@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #3A5278;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -66,4 +66,56 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1{
+  size: 90px;
+}
+
+.tablesupport {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: gray;
+}
+
+.card {
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+  width: 400px;
+  height: 200px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px; 
+  background-image: url('lightpaperfibers.png');
+}
+
+h4.card {
+  font-size: 30px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+h1 {
+  color: white;
+  font-family: "Open Sans", "Arial";
 }
