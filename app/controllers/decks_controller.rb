@@ -25,6 +25,7 @@ class DecksController < ApplicationController
   # GET /decks/new.json
   def new
     @deck = Deck.new
+    @deck.cards.build
 
     respond_to do |format|
       format.html # new.html.erb

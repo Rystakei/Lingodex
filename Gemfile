@@ -9,6 +9,10 @@ gem 'sqlite3'
 
 gem 'devise'
 
+gem 'simple_form'
+
+gem 'cocoon'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -20,6 +24,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
 
 gem 'jquery-rails'
 

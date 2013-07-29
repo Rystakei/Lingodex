@@ -1,37 +1,13 @@
-<%= form_for(@deck) do |f| %>
-  <% if @deck.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@deck.errors.count, "error") %> prohibited this deck from being saved:</h2>
-
-      <ul>
-      <% @deck.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
+<%= simple_form_for @deck do |f| %>
+  <%= f.input :name %>
+  <%= f.input :subject %>
+  <h3 id = "cards"> Cards </h3>
+    <%= f.simple_fields_for :cards do |card| %>
+      <%= render 'card_fields', :f => card %>
+    <p> links </p>
+      <%= link_to_add_association 'add card', f, :cards %>
+  <%= f.submit %>
+  <% end %>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
-  </div>
-  <div class="field">
-    <%= f.label :cards %><br />
-    <%= f.text_field :cards %>
-  </div>
-  <div class="field">
-    <%= f.label :times_reviewed %><br />
-    <%= f.number_field :times_reviewed %>
-  </div>
-  <div class="field">
-    <%= f.label :results %><br />
-    <%= f.text_field :results %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+
