@@ -11,3 +11,147 @@
  *= require_self
  *= require_tree .
 */
+
+
+
+body {
+  background-color: #3A5278;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1{
+  size: 90px;
+}
+
+.tablesupport {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: gray;
+}
+
+.card {
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+  width: 400px;
+  height: 200px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px; 
+  background-image: url('lightpaperfibers.png');
+}
+
+h4.card {
+  font-size: 30px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+h1 {
+  color: white;
+  font-family: "Open Sans", "Arial";
+  font-size: 90px;
+}
+
+th{
+	padding: 0px;
+	margin: 0px;
+	background-color: gray;
+	border-color: gray;
+	font-size: 20px;
+}
+
+tr {
+	border-color: gray;
+	background-color: white;
+	font-size: 20px;
+}
+table {
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
