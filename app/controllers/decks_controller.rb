@@ -25,7 +25,6 @@ class DecksController < ApplicationController
   # GET /decks/new.json
   def new
     @deck = Deck.new
-    5.times { @deck.cards.build }
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,7 +36,6 @@ class DecksController < ApplicationController
   # GET /decks/1/edit
   def edit
     @deck = Deck.find(params[:id])
-    5.times { @deck.cards.build }
   end
 
   # POST /decks

@@ -12,4 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.nested-fields
+
+$(function(){
+	$('form').nestedFields();
+
+	$('.quiz[data-quiz-id]').each(function(){
+		var that = this;
+		$.getJSON('/decks/' + $(this).data('quiz-id'), function(data){
+			// console.log(that);
+			$(that).text(data.name);
+		});
+	});
+});

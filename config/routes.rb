@@ -7,6 +7,8 @@ Lingodex::Application.routes.draw do
 
   resources :decks
 
+  resources :quizzes, only: [:show]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

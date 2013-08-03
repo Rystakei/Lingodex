@@ -1,10 +1,14 @@
 class Deck < ActiveRecord::Base
 	has_many :cards
   belongs_to :user
-  accepts_nested_attributes_for :cards, allow_destroy: true
+  accepts_nested_attributes_for :cards, allow_destroy: true, reject_if: :all_blank
+  validates_associated :cards
   attr_accessible :name, :subject, :cards_attributes, :correct_answers, :incorrect_answers, :correct_card_indices
 
 
+  def as_json(options={})
+    super only: [:name, :subject], include: {cards: {only: [:id, :term, :definition]}}
+  end
 
   def quiz
     #Displays a key to the user and user has to type in the correct term. 

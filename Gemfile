@@ -11,7 +11,7 @@ gem 'devise'
 
 gem 'simple_form'
 
-gem 'cocoon'
+gem 'awesome_nested_fields'
 
 # Gems used only for assets and not required
 # in production environments by default.

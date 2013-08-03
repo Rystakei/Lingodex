@@ -21,15 +21,23 @@
   </div>
 
   <h2> Cards <h2>
-  <%= f.fields_for :cards do |ff| %>
-    <%= ff.label :term %>
-    <%= ff.text_field :term %>
+  <div class="items"> 
 
-    <%= ff.label :definition %>
-    <%= ff.text_field :definition %> 
+    <%= f.nested_fields_for :cards, item_template_class: "template item card-template" do |ff| %>
+      <div class="item">
+        <%= ff.hidden_field :id %>
+        <%= ff.hidden_field :_destroy %>
 
+        <%= ff.label :term %>
+        <%= ff.text_field :term %>
+
+        <%= ff.label :definition %>
+        <%= ff.text_field :definition %> 
+        <a href="#" class="remove">Remove card </a>
+      </div>
     <% end %>
-
+  </div>
+  <a href="#" class="add">Add card </a>
   <div class="actions">
     <%= f.submit %>
   </div>
