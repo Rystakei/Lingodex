@@ -20,6 +20,16 @@
     <%= f.text_field :subject %>
   </div>
 
+  <h2> Cards <h2>
+  <%= f.fields_for :cards do |ff| %>
+    <%= ff.label :term %>
+    <%= ff.text_field :term %>
+
+    <%= ff.label :definition %>
+    <%= ff.text_field :definition %> 
+
+    <% end %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
