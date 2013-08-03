@@ -61,7 +61,7 @@ Lingodex::Application.routes.draw do
 match 'decks/:id/recallquiz' => 'decks#recallquiz', :as => :recallquiz
 
 
-devise_for :users, :controllers => { :registrations => :registrations }, :skip => [:sessions]
+devise_for :users, :skip => [:sessions]
 as :user do
     get 'signin' => 'devise/sessions#new', :as => :new_user_session
     post 'signin' => 'devise/sessions#create', :as => :user_session
