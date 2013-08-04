@@ -12,22 +12,17 @@
  *= require_tree .
 */
 
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 body {
-  background-color: #3A5278;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 18px;
-}
+  margin: 0;
+  padding: 0;
+  background-color: #B6DED3;
+  font-family: Lato;
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
 
+}
 pre {
   background-color: #eee;
   padding: 10px;
@@ -87,11 +82,17 @@ div {
 
 
 h1, h2, h3 {
-  text-align: center;
+text-align: center;
+color: #189A99;
+font-family: lato;
+font-style: normal;
+font-variant: normal;
+font-weight: 100;
+line-height: 92px;
 }
 
-h1{
-  size: 90px;
+h2{
+  color: #03638F;
 }
 
 .tablesupport {
@@ -104,9 +105,7 @@ table {
   margin-right: auto;
 }
 
-th {
-  background-color: gray;
-}
+
 
 .card {
   border-color: darkgray;
@@ -132,26 +131,16 @@ h4.card {
 }
 
 h1 {
-  color: white;
-  font-family: "Open Sans", "Arial";
+  width: 100%;
+  color: #F3F7DF;
   font-size: 90px;
+
 }
 
-th{
-	padding: 0px;
-	margin: 0px;
-	background-color: gray;
-	border-color: gray;
-	font-size: 20px;
-}
-
-tr {
-	border-color: gray;
-	background-color: white;
-	font-size: 20px;
-}
-table {
-	border-style: solid;
-	border-width: 1px;
-	border-color: gray;
+.header {
+  width: 100%;
+  background-color: teal;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }

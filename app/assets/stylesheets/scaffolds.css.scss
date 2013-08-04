@@ -2,7 +2,7 @@ body {
   background-color: #3A5278;
   color: black;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 18px;
 }
 
@@ -113,5 +113,15 @@ h4.card {
   font-size: 30px;
   padding-top: 0px;
   margin-top: 0px;
+}
+
+.header {
+  font-size: 90px;
+  color: white;
+  font-weight: lighter;
+}
+
+th {
+  font-size: 10px;
 }
 
