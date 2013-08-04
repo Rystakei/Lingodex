@@ -18,8 +18,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #B6DED3;
+  background-color: #DBE6EC;
   font-family: Lato;
+  clear: both;
 
 
 }
@@ -83,7 +84,7 @@ div {
 
 h1, h2, h3 {
 text-align: center;
-color: #189A99;
+color: navy;
 font-family: lato;
 font-style: normal;
 font-variant: normal;
@@ -92,7 +93,7 @@ line-height: 92px;
 }
 
 h2{
-  color: #03638F;
+  color: white;
 }
 
 .tablesupport {
@@ -134,13 +135,82 @@ h1 {
   width: 100%;
   color: #F3F7DF;
   font-size: 90px;
+  margin: 5px;
 
+}
+h2 {
+  padding: -30px;
+  margin: -30px;
+}
+
+.authstatus {
+  width: 100%;
+  background-color: #81A8B8;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .header {
   width: 100%;
-  background-color: teal;
+  background-color: #81A8B8;
   padding: 0;
   margin: 0;
   display: inline-block;
+  border-bottom: solid #548396;
+}
+
+.secondheader {
+  width: 100%;
+  background-color: #6B818A;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid #506067;
+}
+
+table {
+  width: 100%;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+}
+
+tr{
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+th {
+  background-color: white;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.gensection {
+  background-color: #FFFFF0;
+  border-color: #FFFFF0;
+  border-size: 1px;
+  border-style: solid;
+  border-radius: 25px;
+  width: 250px;
+  height: 225px;
+  display: inline-block;
+  margin: 0px 50px;
+  text-align: center;
+  color: #81a8b8;
+  /*Adding text keeps moving the div! */
+  vertical-align: top;
+
+}
+
+.mamasection {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
