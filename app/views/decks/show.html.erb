@@ -32,6 +32,8 @@
 		<h3> Options</h3>
 		<p> Take Recall Quiz</p>
 		<p> Take Multiple Choice Quiz</p>
+		<p> Add Cards </p>
+		<%= link_to "Edit Deck", edit_deck_path %> 
 		</div>
 
 
@@ -46,7 +48,6 @@
   <tr>
     <th>Term</th>
     <th>Definition</th>
-    <th>Results</th>
     <th></th>
     <th></th>
     <th></th>
@@ -56,9 +57,9 @@
   <tr>
     <td><%= deck.term %></td>
     <td><%= deck.definition %></td>
-    <td><%= link_to 'Show', deck %></td>
-    <td><%= link_to 'Edit', edit_deck_path(deck) %></td>
-    <td><%= link_to 'Destroy', deck, confirm: 'Are you sure?', method: :delete %></td>
+<!--     <td><%= link_to 'Show', deck %></td> -->
+    <td><%= link_to 'Edit Card', edit_deck_path(deck) %></td>
+    <td><%= link_to 'Delete Card', deck, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
